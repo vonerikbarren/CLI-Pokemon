@@ -30,6 +30,12 @@ inquirer
       message: "Do you prefer to start off at a small town, medium city, or large city?",
       choices: ["small town", "medium city", "large city"],
       name: "townSize"
+    },
+
+    {
+      type: "confirm",
+      message: "Okay you just arrived in the city of your choice, can you confirm?",
+      name: "confirmLocation"
     }
 
 
@@ -55,13 +61,5 @@ inquirer
     }
 
 
-  }).then
+  })
 
-inquirer
-  .prompt([
-    {
-      type: "confirm",
-      message: "Okay you just arrived in the city of your choice, can you confirm?",
-      name: "confirmLocation"
-    }
-  ])
