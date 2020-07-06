@@ -36,7 +36,22 @@ inquirer
       type: "confirm",
       message: "Okay you just arrived in the city of your choice, can you confirm?",
       name: "confirmLocation"
+    },
+
+    {
+      type: "input",
+      message: "You wake up in your room & notice the clock is wrong, Whats the right time in military time?",
+      name: "clock"
+    },
+
+    {
+      type: "list",
+      message: "Okay you left your house and now you are out in some grass, then a random stranger is attacked by a pokemon and needs your help. He additionally asks you to choose out the three pokeballs in his pouch, which pokemon will you choose?",
+      choices: ["pikachu", "charmander", "squirtle"],
+      name: "pokechoose"
     }
+
+
 
 
   ]).then(function (user) {
